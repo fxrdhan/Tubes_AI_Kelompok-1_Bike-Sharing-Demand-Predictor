@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Seoul_Bike_Regression (8)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Seoul_Bike_Regression (9)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7540,7 +7540,7 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Pengumpulan-Data">Pengumpulan Data<a class="anchor-link" href="#Pengumpulan-Data">¶</a></h2>
+<h2 id="1.-Pengumpulan-Data"><strong>1. Pengumpulan Data</strong><a class="anchor-link" href="#1.-Pengumpulan-Data">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7549,7 +7549,7 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [108]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">ucimlrepo</span> <span class="o">-</span><span class="n">q</span>
@@ -7577,7 +7577,7 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">560</span><span class="p">)</span>
@@ -7593,9 +7593,9 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[109]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-a4420b98-da8c-49af-b14a-f3ea108ecff5">
+<div class="colab-df-container" id="df-01f4f685-621e-4970-aaa8-559c0765a93e">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -7824,7 +7824,7 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-a4420b98-da8c-49af-b14a-f3ea108ecff5')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-01f4f685-621e-4970-aaa8-559c0765a93e')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -7871,12 +7871,12 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-a4420b98-da8c-49af-b14a-f3ea108ecff5 button.colab-df-convert');
+        document.querySelector('#df-01f4f685-621e-4970-aaa8-559c0765a93e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a4420b98-da8c-49af-b14a-f3ea108ecff5');
+        const element = document.querySelector('#df-01f4f685-621e-4970-aaa8-559c0765a93e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -7894,8 +7894,8 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
       }
     </script>
 </div>
-<div id="df-91ed0e10-0a25-4146-b88d-6cd4ced5da89">
-<button class="colab-df-quickchart" onclick="quickchart('df-91ed0e10-0a25-4146-b88d-6cd4ced5da89')" style="display:none;" title="Suggest charts">
+<div id="df-dcbbae7b-771b-42d0-894b-fd31e9ec16e5">
+<button class="colab-df-quickchart" onclick="quickchart('df-dcbbae7b-771b-42d0-894b-fd31e9ec16e5')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -8008,13 +8008,13 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-91ed0e10-0a25-4146-b88d-6cd4ced5da89 button');
+            document.querySelector('#df-dcbbae7b-771b-42d0-894b-fd31e9ec16e5 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
 </div>
-<div id="id_eb3785b8-725d-496a-aced-cb2cc01cb300">
+<div id="id_8495bdde-bdde-40f1-a0d5-b1ec42a8067e">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -8054,7 +8054,7 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_eb3785b8-725d-496a-aced-cb2cc01cb300 button.colab-df-generate');
+        document.querySelector('#id_8495bdde-bdde-40f1-a0d5-b1ec42a8067e button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -8078,7 +8078,7 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Pemahaman-Data">Pemahaman Data<a class="anchor-link" href="#Pemahaman-Data">¶</a></h2>
+<h2 id="2.-Pemahaman-Data"><strong>2. Pemahaman Data</strong><a class="anchor-link" href="#2.-Pemahaman-Data">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8087,7 +8087,7 @@ menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -8134,7 +8134,7 @@ memory usage: 958.3+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
@@ -8148,9 +8148,9 @@ memory usage: 958.3+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[111]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-40e7e77c-50bf-4f89-92aa-1741e6cd485b">
+<div class="colab-df-container" id="df-ac485208-df00-4b6d-883c-45699a01b11d">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -8295,7 +8295,7 @@ memory usage: 958.3+ KB
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-40e7e77c-50bf-4f89-92aa-1741e6cd485b')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-ac485208-df00-4b6d-883c-45699a01b11d')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8342,12 +8342,12 @@ memory usage: 958.3+ KB
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-40e7e77c-50bf-4f89-92aa-1741e6cd485b button.colab-df-convert');
+        document.querySelector('#df-ac485208-df00-4b6d-883c-45699a01b11d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-40e7e77c-50bf-4f89-92aa-1741e6cd485b');
+        const element = document.querySelector('#df-ac485208-df00-4b6d-883c-45699a01b11d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8365,8 +8365,8 @@ memory usage: 958.3+ KB
       }
     </script>
 </div>
-<div id="df-fe4ae21c-d89a-4dd3-8d17-6fc4c3bd6508">
-<button class="colab-df-quickchart" onclick="quickchart('df-fe4ae21c-d89a-4dd3-8d17-6fc4c3bd6508')" style="display:none;" title="Suggest charts">
+<div id="df-9f4bbcd0-c65c-40f4-b3ff-a0b97f8f9382">
+<button class="colab-df-quickchart" onclick="quickchart('df-9f4bbcd0-c65c-40f4-b3ff-a0b97f8f9382')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -8479,7 +8479,7 @@ memory usage: 958.3+ KB
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-fe4ae21c-d89a-4dd3-8d17-6fc4c3bd6508 button');
+            document.querySelector('#df-9f4bbcd0-c65c-40f4-b3ff-a0b97f8f9382 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -8496,7 +8496,7 @@ memory usage: 958.3+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="s1">'missing_count'</span><span class="p">)</span>
@@ -8510,9 +8510,9 @@ memory usage: 958.3+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[112]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-b84b5247-a230-4ca5-b27a-d344c65d1f5d">
+<div class="colab-df-container" id="df-c114bf2e-1240-4ccd-a272-4ec6a9d13a0d">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -8596,7 +8596,7 @@ memory usage: 958.3+ KB
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-b84b5247-a230-4ca5-b27a-d344c65d1f5d')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-c114bf2e-1240-4ccd-a272-4ec6a9d13a0d')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8643,12 +8643,12 @@ memory usage: 958.3+ KB
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-b84b5247-a230-4ca5-b27a-d344c65d1f5d button.colab-df-convert');
+        document.querySelector('#df-c114bf2e-1240-4ccd-a272-4ec6a9d13a0d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b84b5247-a230-4ca5-b27a-d344c65d1f5d');
+        const element = document.querySelector('#df-c114bf2e-1240-4ccd-a272-4ec6a9d13a0d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8666,8 +8666,8 @@ memory usage: 958.3+ KB
       }
     </script>
 </div>
-<div id="df-f77a3541-ef78-466d-9853-fc8c16fd0d4c">
-<button class="colab-df-quickchart" onclick="quickchart('df-f77a3541-ef78-466d-9853-fc8c16fd0d4c')" style="display:none;" title="Suggest charts">
+<div id="df-aaaaf70f-8b86-4ce5-aea4-ce44c1caa584">
+<button class="colab-df-quickchart" onclick="quickchart('df-aaaaf70f-8b86-4ce5-aea4-ce44c1caa584')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -8780,7 +8780,7 @@ memory usage: 958.3+ KB
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-f77a3541-ef78-466d-9853-fc8c16fd0d4c button');
+            document.querySelector('#df-aaaaf70f-8b86-4ce5-aea4-ce44c1caa584 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -8813,7 +8813,7 @@ memory usage: 958.3+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [113]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Cek duplikat</span>
@@ -8859,7 +8859,7 @@ memory usage: 958.3+ KB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Analisis-Data-Eksploratif-(EDA)">Analisis Data Eksploratif (EDA)<a class="anchor-link" href="#Analisis-Data-Eksploratif-(EDA)">¶</a></h2>
+<h2 id="3.-Analisis-Data-Eksploratif-(EDA)"><strong>3. Analisis Data Eksploratif (EDA)</strong><a class="anchor-link" href="#3.-Analisis-Data-Eksploratif-(EDA)">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8868,7 +8868,7 @@ memory usage: 958.3+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [114]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
@@ -8904,7 +8904,7 @@ memory usage: 958.3+ KB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Outliers-pada-Rented-Bike-Count">Outliers pada Rented Bike Count<a class="anchor-link" href="#Outliers-pada-Rented-Bike-Count">¶</a></h3>
+<h3 id="3.1.-Outliers-pada-Rented-Bike-Count">3.1. Outliers pada Rented Bike Count<a class="anchor-link" href="#3.1.-Outliers-pada-Rented-Bike-Count">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8913,7 +8913,7 @@ memory usage: 958.3+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [115]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Hitung statistik</span>
@@ -8933,7 +8933,7 @@ memory usage: 958.3+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [116]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Q1 (25%): </span><span class="si">{</span><span class="n">Q1</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -8987,7 +8987,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Korelasi-Semua-Fitur">Korelasi Semua Fitur<a class="anchor-link" href="#Korelasi-Semua-Fitur">¶</a></h3>
+<h3 id="3.2.-Korelasi-Semua-Fitur">3.2. Korelasi Semua Fitur<a class="anchor-link" href="#3.2.-Korelasi-Semua-Fitur">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8996,7 +8996,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">numeric_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
@@ -9045,7 +9045,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Korelasi-Fitur-dengan-Target">Korelasi Fitur dengan Target<a class="anchor-link" href="#Korelasi-Fitur-dengan-Target">¶</a></h3>
+<h3 id="3.3.-Korelasi-Fitur-dengan-Target">3.3. Korelasi Fitur dengan Target<a class="anchor-link" href="#3.3.-Korelasi-Fitur-dengan-Target">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9054,7 +9054,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">corr_matrix</span><span class="p">[</span><span class="s1">'Rented Bike Count'</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="s1">'correlation'</span><span class="p">)</span>
@@ -9068,9 +9068,9 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[118]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-c8b17c0f-ecbe-4011-a926-f3c6f067d09f">
+<div class="colab-df-container" id="df-763bac57-932c-4265-830f-865cd3bcb0bb">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -9138,7 +9138,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-c8b17c0f-ecbe-4011-a926-f3c6f067d09f')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-763bac57-932c-4265-830f-865cd3bcb0bb')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -9185,12 +9185,12 @@ Jumlah outlier: 158 (1.80%)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-c8b17c0f-ecbe-4011-a926-f3c6f067d09f button.colab-df-convert');
+        document.querySelector('#df-763bac57-932c-4265-830f-865cd3bcb0bb button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c8b17c0f-ecbe-4011-a926-f3c6f067d09f');
+        const element = document.querySelector('#df-763bac57-932c-4265-830f-865cd3bcb0bb');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -9208,8 +9208,8 @@ Jumlah outlier: 158 (1.80%)
       }
     </script>
 </div>
-<div id="df-628ef908-737d-4edb-8827-dadace7d853d">
-<button class="colab-df-quickchart" onclick="quickchart('df-628ef908-737d-4edb-8827-dadace7d853d')" style="display:none;" title="Suggest charts">
+<div id="df-3bfdce64-01bf-495c-b7ad-fa50a7c92b88">
+<button class="colab-df-quickchart" onclick="quickchart('df-3bfdce64-01bf-495c-b7ad-fa50a7c92b88')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -9322,7 +9322,7 @@ Jumlah outlier: 158 (1.80%)
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-628ef908-737d-4edb-8827-dadace7d853d button');
+            document.querySelector('#df-3bfdce64-01bf-495c-b7ad-fa50a7c92b88 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -9339,7 +9339,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [119]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">top_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Temperature'</span><span class="p">,</span> <span class="s1">'Hour'</span><span class="p">,</span> <span class="s1">'Dew point temperature'</span><span class="p">,</span>
@@ -9376,7 +9376,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [120]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">hourly_avg</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Hour'</span><span class="p">)[</span><span class="s1">'Rented Bike Count'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -9425,7 +9425,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
@@ -9478,7 +9478,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Pra-pemrosesan-Data">Pra-pemrosesan Data<a class="anchor-link" href="#Pra-pemrosesan-Data">¶</a></h2><p>Sebelum membangun model, data perlu diproses terlebih dahulu. Tahapan meliputi encoding variabel kategorikal, penanganan outlier, dan pengecekan multikolinearitas.</p>
+<h2 id="4.-Pra-pemrosesan-Data"><strong>4. Pra-pemrosesan Data</strong><a class="anchor-link" href="#4.-Pra-pemrosesan-Data">¶</a></h2><p>Sebelum membangun model, data perlu diproses terlebih dahulu. Tahapan meliputi encoding variabel kategorikal, penanganan outlier, dan pengecekan multikolinearitas.</p>
 </div>
 </div>
 </div>
@@ -9489,7 +9489,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Encoding-Variabel-Kategorikal">Encoding Variabel Kategorikal<a class="anchor-link" href="#Encoding-Variabel-Kategorikal">¶</a></h3><p>Algoritma Linear Regression hanya dapat memproses input numerik, sehingga variabel kategorikal perlu ditransformasi melalui proses encoding. Terdapat beberapa metode encoding yang umum digunakan diantaranya:</p>
+<h3 id="4.1.-Encoding-Variabel-Kategorikal">4.1. Encoding Variabel Kategorikal<a class="anchor-link" href="#4.1.-Encoding-Variabel-Kategorikal">¶</a></h3><p>Algoritma Linear Regression hanya dapat memproses input numerik, sehingga variabel kategorikal perlu ditransformasi melalui proses encoding. Terdapat beberapa metode encoding yang umum digunakan diantaranya:</p>
 <ul>
 <li><p><strong>Label Encoding</strong> mengubah setiap kategori menjadi angka integer (0, 1, 2, ...). Metode ini cocok untuk variabel ordinal yang memiliki urutan bermakna, misalnya tingkat pendidikan (SD=1, SMP=2, SMA=3).</p>
 </li>
@@ -9507,7 +9507,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [122]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Binary Encoding untuk Holiday dan Functioning Day</span>
@@ -9533,9 +9533,9 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[122]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-a9fdc6dd-1621-4fdd-9186-bdf07c4887c5">
+<div class="colab-df-container" id="df-ea955d75-9b20-4bd5-8bfb-9b673655f930">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -9647,7 +9647,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-a9fdc6dd-1621-4fdd-9186-bdf07c4887c5')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-ea955d75-9b20-4bd5-8bfb-9b673655f930')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -9694,12 +9694,12 @@ Jumlah outlier: 158 (1.80%)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-a9fdc6dd-1621-4fdd-9186-bdf07c4887c5 button.colab-df-convert');
+        document.querySelector('#df-ea955d75-9b20-4bd5-8bfb-9b673655f930 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a9fdc6dd-1621-4fdd-9186-bdf07c4887c5');
+        const element = document.querySelector('#df-ea955d75-9b20-4bd5-8bfb-9b673655f930');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -9717,8 +9717,8 @@ Jumlah outlier: 158 (1.80%)
       }
     </script>
 </div>
-<div id="df-5fa0f48a-35d3-4861-8c3a-698bd2215a43">
-<button class="colab-df-quickchart" onclick="quickchart('df-5fa0f48a-35d3-4861-8c3a-698bd2215a43')" style="display:none;" title="Suggest charts">
+<div id="df-1ba8a5f8-7f97-430a-b4fd-72e1cb759286">
+<button class="colab-df-quickchart" onclick="quickchart('df-1ba8a5f8-7f97-430a-b4fd-72e1cb759286')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -9831,7 +9831,7 @@ Jumlah outlier: 158 (1.80%)
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-5fa0f48a-35d3-4861-8c3a-698bd2215a43 button');
+            document.querySelector('#df-1ba8a5f8-7f97-430a-b4fd-72e1cb759286 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -9850,7 +9850,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="VIF-Check-untuk-Multicollinearity">VIF Check untuk Multicollinearity<a class="anchor-link" href="#VIF-Check-untuk-Multicollinearity">¶</a></h3><p>Variance Inflation Factor (VIF) untuk deteksi multikolinearitas</p>
+<h3 id="4.2.-VIF-Check-untuk-Multicollinearity">4.2. VIF Check untuk Multicollinearity<a class="anchor-link" href="#4.2.-VIF-Check-untuk-Multicollinearity">¶</a></h3><p>Variance Inflation Factor (VIF) untuk deteksi multikolinearitas</p>
 </div>
 </div>
 </div>
@@ -9859,7 +9859,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [123]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.stats.outliers_influence</span><span class="w"> </span><span class="kn">import</span> <span class="n">variance_inflation_factor</span>
@@ -9884,9 +9884,9 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[123]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-40bc0af2-cb16-4e2b-b6a8-a58f3891df4c">
+<div class="colab-df-container" id="df-6da45c2e-9aa3-4d0d-847a-72ad25666f64">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -9985,7 +9985,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-40bc0af2-cb16-4e2b-b6a8-a58f3891df4c')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-6da45c2e-9aa3-4d0d-847a-72ad25666f64')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -10032,12 +10032,12 @@ Jumlah outlier: 158 (1.80%)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-40bc0af2-cb16-4e2b-b6a8-a58f3891df4c button.colab-df-convert');
+        document.querySelector('#df-6da45c2e-9aa3-4d0d-847a-72ad25666f64 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-40bc0af2-cb16-4e2b-b6a8-a58f3891df4c');
+        const element = document.querySelector('#df-6da45c2e-9aa3-4d0d-847a-72ad25666f64');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -10055,8 +10055,8 @@ Jumlah outlier: 158 (1.80%)
       }
     </script>
 </div>
-<div id="df-79989221-1ca0-4618-97df-42382de771d9">
-<button class="colab-df-quickchart" onclick="quickchart('df-79989221-1ca0-4618-97df-42382de771d9')" style="display:none;" title="Suggest charts">
+<div id="df-f2336841-1d75-4fb4-a658-3562809e6d42">
+<button class="colab-df-quickchart" onclick="quickchart('df-f2336841-1d75-4fb4-a658-3562809e6d42')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -10169,13 +10169,13 @@ Jumlah outlier: 158 (1.80%)
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-79989221-1ca0-4618-97df-42382de771d9 button');
+            document.querySelector('#df-f2336841-1d75-4fb4-a658-3562809e6d42 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
 </div>
-<div id="id_355cd35c-2d28-4143-9a6d-a19dd6ea84d0">
+<div id="id_5cbcc319-5fe5-43e2-ad69-8e809d7c96de">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -10215,7 +10215,7 @@ Jumlah outlier: 158 (1.80%)
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_355cd35c-2d28-4143-9a6d-a19dd6ea84d0 button.colab-df-generate');
+        document.querySelector('#id_5cbcc319-5fe5-43e2-ad69-8e809d7c96de button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -10253,15 +10253,15 @@ Jumlah outlier: 158 (1.80%)
 </tr>
 <tr>
 <td>1 &lt; VIF &lt; 5</td>
-<td>Korelasi moderat (acceptable)</td>
+<td>Korelasi moderat</td>
 </tr>
 <tr>
 <td>5 &lt; VIF &lt; 10</td>
-<td>Korelasi tinggi (perlu perhatian)</td>
+<td>Korelasi tinggi</td>
 </tr>
 <tr>
 <td>VIF &gt; 10</td>
-<td>Multikolinearitas serius (harus ditangani)</td>
+<td>Multikolinearitas tinggi</td>
 </tr>
 </tbody>
 </table>
@@ -10276,7 +10276,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Drop-Multicollinearity">Drop Multicollinearity<a class="anchor-link" href="#Drop-Multicollinearity">¶</a></h3><p>Korelasi antara <code>Temperature</code> dan <code>Dew Point Temperature</code> sangat tinggi yaitu <strong>0.91</strong>, yang dapat menyebabkan koefisien regresi menjadi tidak stabil. <code>Temperature</code> dipertahankan karena lebih fundamental, sedangkan <code>Dew Point Temperature</code> dihapus. Kolom <code>Date</code> juga dihapus karena tidak relevan untuk model prediksi numerik.</p>
+<h3 id="4.3.-Drop-Multicollinearity">4.3. Drop Multicollinearity<a class="anchor-link" href="#4.3.-Drop-Multicollinearity">¶</a></h3><p>Korelasi antara <code>Temperature</code> dan <code>Dew Point Temperature</code> sangat tinggi yaitu <strong>0.91</strong>, yang dapat menyebabkan koefisien regresi menjadi tidak stabil. <code>Temperature</code> dipertahankan karena lebih fundamental, sedangkan <code>Dew Point Temperature</code> dihapus. Kolom <code>Date</code> juga dihapus karena tidak relevan untuk model prediksi numerik.</p>
 </div>
 </div>
 </div>
@@ -10285,7 +10285,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [124]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'Dew point temperature'</span><span class="p">,</span> <span class="s1">'Date'</span><span class="p">])</span>
@@ -10299,7 +10299,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [125]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">X_vif</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'Rented Bike Count'</span><span class="p">])</span>
@@ -10321,9 +10321,9 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[125]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-1a2aff0e-57a0-4453-af1e-0cc120b9c578">
+<div class="colab-df-container" id="df-402ebdd9-c8bc-4d89-aae4-a977a32da64d">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -10417,7 +10417,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-1a2aff0e-57a0-4453-af1e-0cc120b9c578')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-402ebdd9-c8bc-4d89-aae4-a977a32da64d')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -10464,12 +10464,12 @@ Jumlah outlier: 158 (1.80%)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-1a2aff0e-57a0-4453-af1e-0cc120b9c578 button.colab-df-convert');
+        document.querySelector('#df-402ebdd9-c8bc-4d89-aae4-a977a32da64d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1a2aff0e-57a0-4453-af1e-0cc120b9c578');
+        const element = document.querySelector('#df-402ebdd9-c8bc-4d89-aae4-a977a32da64d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -10487,8 +10487,8 @@ Jumlah outlier: 158 (1.80%)
       }
     </script>
 </div>
-<div id="df-cb4fd2fc-cb1c-49c0-81de-d0ac2487500f">
-<button class="colab-df-quickchart" onclick="quickchart('df-cb4fd2fc-cb1c-49c0-81de-d0ac2487500f')" style="display:none;" title="Suggest charts">
+<div id="df-73ef42f3-1c0d-493a-804d-d29798113e3a">
+<button class="colab-df-quickchart" onclick="quickchart('df-73ef42f3-1c0d-493a-804d-d29798113e3a')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -10601,13 +10601,13 @@ Jumlah outlier: 158 (1.80%)
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-cb4fd2fc-cb1c-49c0-81de-d0ac2487500f button');
+            document.querySelector('#df-73ef42f3-1c0d-493a-804d-d29798113e3a button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
 </div>
-<div id="id_90dd2cd4-9d0b-4fc7-b549-fefd3d9d1ec0">
+<div id="id_0bde5f47-b549-406f-87e5-30f73755acdf">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -10647,7 +10647,7 @@ Jumlah outlier: 158 (1.80%)
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_90dd2cd4-9d0b-4fc7-b549-fefd3d9d1ec0 button.colab-df-generate');
+        document.querySelector('#id_0bde5f47-b549-406f-87e5-30f73755acdf button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -10670,7 +10670,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Setelah <code>Dew point temperature</code> di-drop, VIF Temperature akan turun secara signifikan karena sumber multikolinearitasnya telah dihilangkan.</p>
+<p>Setelah penghapusan <code>Dew Point</code>, variabel <code>Functioning Day</code> masih memiliki VIF tinggi (22.4). Namun, variabel ini tidak dihapus karena merupakan variabel kategorikal biner (dummy) yang krusial membedakan hari operasional vs libur. VIF tinggi pada variabel dummy lazim terjadi karena ketidakseimbangan kelas (mayoritas hari adalah Functioning Day) dan tidak selalu mengganggu performa prediksi secara signifikan.</p>
 </div>
 </div>
 </div>
@@ -10681,7 +10681,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Persiapan-Fitur-(x)-dan-Target-(y)">Persiapan Fitur (x) dan Target (y)<a class="anchor-link" href="#Persiapan-Fitur-(x)-dan-Target-(y)">¶</a></h3><p>Target variable yang diprediksi adalah jumlah penyewaan sepeda, sedangkan 13 fitur lainnya digunakan sebagai prediktor (termasuk 3 kolom hasil One-Hot Encoding untuk Seasons).</p>
+<h3 id="4.4.-Fitur-(x)-dan-Target-(y)">4.4. Fitur (x) dan Target (y)<a class="anchor-link" href="#4.4.-Fitur-(x)-dan-Target-(y)">¶</a></h3><p>Target variable yang diprediksi adalah jumlah penyewaan sepeda, sedangkan 13 fitur lainnya digunakan sebagai prediktor (termasuk 3 kolom hasil One-Hot Encoding untuk Seasons).</p>
 </div>
 </div>
 </div>
@@ -10690,7 +10690,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [126]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'Rented Bike Count'</span><span class="p">])</span>
@@ -10707,9 +10707,9 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[126]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-c6487bc0-dc34-49fc-8d27-5944d1f35da2">
+<div class="colab-df-container" id="df-dd3fb280-9602-4e4e-ab94-fad965b5a972">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -10748,7 +10748,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-c6487bc0-dc34-49fc-8d27-5944d1f35da2')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-dd3fb280-9602-4e4e-ab94-fad965b5a972')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -10795,12 +10795,12 @@ Jumlah outlier: 158 (1.80%)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-c6487bc0-dc34-49fc-8d27-5944d1f35da2 button.colab-df-convert');
+        document.querySelector('#df-dd3fb280-9602-4e4e-ab94-fad965b5a972 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c6487bc0-dc34-49fc-8d27-5944d1f35da2');
+        const element = document.querySelector('#df-dd3fb280-9602-4e4e-ab94-fad965b5a972');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -10818,8 +10818,8 @@ Jumlah outlier: 158 (1.80%)
       }
     </script>
 </div>
-<div id="df-cf1cb10c-97b5-402b-aab3-486bb2ca9ea1">
-<button class="colab-df-quickchart" onclick="quickchart('df-cf1cb10c-97b5-402b-aab3-486bb2ca9ea1')" style="display:none;" title="Suggest charts">
+<div id="df-067ab96b-928a-472e-b4cd-5268ad2dcc96">
+<button class="colab-df-quickchart" onclick="quickchart('df-067ab96b-928a-472e-b4cd-5268ad2dcc96')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -10932,7 +10932,7 @@ Jumlah outlier: 158 (1.80%)
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-cf1cb10c-97b5-402b-aab3-486bb2ca9ea1 button');
+            document.querySelector('#df-067ab96b-928a-472e-b4cd-5268ad2dcc96 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -10952,7 +10952,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Pembagian-Data">Pembagian Data<a class="anchor-link" href="#Pembagian-Data">¶</a></h2>
+<h2 id="5.-Pembagian-Data"><strong>5. Pembagian Data</strong><a class="anchor-link" href="#5.-Pembagian-Data">¶</a></h2>
 </div>
 </div>
 </div>
@@ -10963,7 +10963,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Pembagian-Data-Training-dan-Testing">Pembagian Data Training dan Testing<a class="anchor-link" href="#Pembagian-Data-Training-dan-Testing">¶</a></h3><p>Data dibagi dengan rasio 80:20, dimana 80% data digunakan untuk training dan 20% sisanya untuk testing. Parameter <code>random_state=42</code> digunakan untuk memastikan hasil pembagian data dapat direproduksi dengan konsisten jika eksperimen diulang.</p>
+<h3 id="5.1.-Pembagian-Data-Training-dan-Testing">5.1. Pembagian Data Training dan Testing<a class="anchor-link" href="#5.1.-Pembagian-Data-Training-dan-Testing">¶</a></h3><p>Data dibagi dengan rasio 80:20, dimana 80% data digunakan untuk training dan 20% sisanya untuk testing. Parameter <code>random_state=42</code> digunakan untuk memastikan hasil pembagian data dapat direproduksi dengan konsisten jika eksperimen diulang.</p>
 </div>
 </div>
 </div>
@@ -10972,7 +10972,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [127]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -10992,9 +10992,9 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[127]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-18facaec-1f18-4bfa-b028-89b92a0e46e0">
+<div class="colab-df-container" id="df-dd26cb13-9ab6-4886-aca7-0179a1c1798a">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -11036,7 +11036,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-18facaec-1f18-4bfa-b028-89b92a0e46e0')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-dd26cb13-9ab6-4886-aca7-0179a1c1798a')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -11083,12 +11083,12 @@ Jumlah outlier: 158 (1.80%)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-18facaec-1f18-4bfa-b028-89b92a0e46e0 button.colab-df-convert');
+        document.querySelector('#df-dd26cb13-9ab6-4886-aca7-0179a1c1798a button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-18facaec-1f18-4bfa-b028-89b92a0e46e0');
+        const element = document.querySelector('#df-dd26cb13-9ab6-4886-aca7-0179a1c1798a');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -11106,8 +11106,8 @@ Jumlah outlier: 158 (1.80%)
       }
     </script>
 </div>
-<div id="df-cc5a75b8-b838-4957-a8b5-b6b0d50045ff">
-<button class="colab-df-quickchart" onclick="quickchart('df-cc5a75b8-b838-4957-a8b5-b6b0d50045ff')" style="display:none;" title="Suggest charts">
+<div id="df-6871c153-0ca8-42e7-bdd8-8938b2ceca9f">
+<button class="colab-df-quickchart" onclick="quickchart('df-6871c153-0ca8-42e7-bdd8-8938b2ceca9f')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -11220,7 +11220,7 @@ Jumlah outlier: 158 (1.80%)
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-cc5a75b8-b838-4957-a8b5-b6b0d50045ff button');
+            document.querySelector('#df-6871c153-0ca8-42e7-bdd8-8938b2ceca9f button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -11240,7 +11240,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Model-Regresi-Linear">Model Regresi Linear<a class="anchor-link" href="#Model-Regresi-Linear">¶</a></h2><p>Setelah data siap, model Linear Regression dibangun untuk memprediksi jumlah penyewaan sepeda berdasarkan fitur-fitur yang telah diproses.</p>
+<h2 id="6.-Model-Regresi-Linear"><strong>6. Model Regresi Linear</strong><a class="anchor-link" href="#6.-Model-Regresi-Linear">¶</a></h2><p>Setelah data siap, model Linear Regression dibangun untuk memprediksi jumlah penyewaan sepeda berdasarkan fitur-fitur yang telah diproses.</p>
 </div>
 </div>
 </div>
@@ -11251,7 +11251,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Pelatihan-dan-Prediksi">Pelatihan dan Prediksi<a class="anchor-link" href="#Pelatihan-dan-Prediksi">¶</a></h3><p>Model Linear Regression dilatih menggunakan data training, kemudian digunakan untuk memprediksi jumlah penyewaan pada data testing. Berikut perbandingan nilai aktual dan prediksi untuk 10 sampel pertama:</p>
+<h3 id="6.1.-Pelatihan-dan-Prediksi">6.1. Pelatihan dan Prediksi<a class="anchor-link" href="#6.1.-Pelatihan-dan-Prediksi">¶</a></h3><p>Model Linear Regression dilatih menggunakan data training, kemudian digunakan untuk memprediksi jumlah penyewaan pada data testing. Berikut perbandingan nilai aktual dan prediksi untuk 10 sampel pertama:</p>
 </div>
 </div>
 </div>
@@ -11260,7 +11260,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [128]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
@@ -11278,9 +11278,9 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[128]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-66a9a9c2-7a6e-460e-b13c-dd42c10fdd72">
+<div class="colab-df-container" id="df-9d51c3a9-3b39-4df4-a179-436584162027">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -11359,7 +11359,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-66a9a9c2-7a6e-460e-b13c-dd42c10fdd72')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-9d51c3a9-3b39-4df4-a179-436584162027')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -11406,12 +11406,12 @@ Jumlah outlier: 158 (1.80%)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-66a9a9c2-7a6e-460e-b13c-dd42c10fdd72 button.colab-df-convert');
+        document.querySelector('#df-9d51c3a9-3b39-4df4-a179-436584162027 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-66a9a9c2-7a6e-460e-b13c-dd42c10fdd72');
+        const element = document.querySelector('#df-9d51c3a9-3b39-4df4-a179-436584162027');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -11429,8 +11429,8 @@ Jumlah outlier: 158 (1.80%)
       }
     </script>
 </div>
-<div id="df-37c17307-c08d-42e2-b8e7-f5a254014991">
-<button class="colab-df-quickchart" onclick="quickchart('df-37c17307-c08d-42e2-b8e7-f5a254014991')" style="display:none;" title="Suggest charts">
+<div id="df-f49725e9-722c-468f-827d-24fba7463ba6">
+<button class="colab-df-quickchart" onclick="quickchart('df-f49725e9-722c-468f-827d-24fba7463ba6')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -11543,7 +11543,7 @@ Jumlah outlier: 158 (1.80%)
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-37c17307-c08d-42e2-b8e7-f5a254014991 button');
+            document.querySelector('#df-f49725e9-722c-468f-827d-24fba7463ba6 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -11563,7 +11563,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Evaluasi-Model">Evaluasi Model<a class="anchor-link" href="#Evaluasi-Model">¶</a></h2><p>Model yang telah dilatih dievaluasi menggunakan data testing untuk mengukur kemampuan generalisasi dan mengidentifikasi area yang perlu ditingkatkan.</p>
+<h2 id="7.-Evaluasi-Model">7. Evaluasi Model<a class="anchor-link" href="#7.-Evaluasi-Model">¶</a></h2><p>Model yang telah dilatih dievaluasi menggunakan data testing untuk mengukur kemampuan generalisasi dan mengidentifikasi area yang perlu ditingkatkan.</p>
 </div>
 </div>
 </div>
@@ -11574,7 +11574,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Metrik-Evaluasi">Metrik Evaluasi<a class="anchor-link" href="#Metrik-Evaluasi">¶</a></h3><p>Performa model dievaluasi menggunakan empat metrik:</p>
+<h3 id="7.1.-Metrik-Evaluasi">7.1. Metrik Evaluasi<a class="anchor-link" href="#7.1.-Metrik-Evaluasi">¶</a></h3><p>Performa model dievaluasi menggunakan empat metrik:</p>
 <p><strong>R² (Coefficient of Determination)</strong></p>
 <p>$$R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}$$</p>
 <p>Mengukur proporsi variansi target yang dapat dijelaskan oleh model. Nilai 1 berarti model sempurna, nilai 0 berarti model tidak lebih baik dari rata-rata.</p>
@@ -11595,7 +11595,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [129]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
@@ -11619,9 +11619,9 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[129]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-657ee434-0800-4362-989c-eb2ac72dfc37">
+<div class="colab-df-container" id="df-328edc9d-a6a3-40c1-925a-f5b328216731">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -11675,7 +11675,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-657ee434-0800-4362-989c-eb2ac72dfc37')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-328edc9d-a6a3-40c1-925a-f5b328216731')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -11722,12 +11722,12 @@ Jumlah outlier: 158 (1.80%)
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-657ee434-0800-4362-989c-eb2ac72dfc37 button.colab-df-convert');
+        document.querySelector('#df-328edc9d-a6a3-40c1-925a-f5b328216731 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-657ee434-0800-4362-989c-eb2ac72dfc37');
+        const element = document.querySelector('#df-328edc9d-a6a3-40c1-925a-f5b328216731');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -11745,8 +11745,8 @@ Jumlah outlier: 158 (1.80%)
       }
     </script>
 </div>
-<div id="df-8d24f7c1-867e-4697-870a-84a58a7d489c">
-<button class="colab-df-quickchart" onclick="quickchart('df-8d24f7c1-867e-4697-870a-84a58a7d489c')" style="display:none;" title="Suggest charts">
+<div id="df-ac2673b3-ba3c-41f6-a183-c1532e0ee67b">
+<button class="colab-df-quickchart" onclick="quickchart('df-ac2673b3-ba3c-41f6-a183-c1532e0ee67b')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -11859,7 +11859,7 @@ Jumlah outlier: 158 (1.80%)
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-8d24f7c1-867e-4697-870a-84a58a7d489c button');
+            document.querySelector('#df-ac2673b3-ba3c-41f6-a183-c1532e0ee67b button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -11889,7 +11889,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Plot-Aktual-vs-Prediksi">Plot Aktual vs Prediksi<a class="anchor-link" href="#Plot-Aktual-vs-Prediksi">¶</a></h3>
+<h3 id="7.2.-Plot-Aktual-vs-Prediksi">7.2. Plot Aktual vs Prediksi<a class="anchor-link" href="#7.2.-Plot-Aktual-vs-Prediksi">¶</a></h3>
 </div>
 </div>
 </div>
@@ -11898,7 +11898,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [130]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
@@ -11945,7 +11945,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Analisis-Residual">Analisis Residual<a class="anchor-link" href="#Analisis-Residual">¶</a></h3><p>Residual adalah selisih antara nilai aktual dan nilai prediksi model, yang dihitung dengan rumus:</p>
+<h3 id="7.3.-Analisis-Residual">7.3. Analisis Residual<a class="anchor-link" href="#7.3.-Analisis-Residual">¶</a></h3><p>Residual adalah selisih antara nilai aktual dan nilai prediksi model, yang dihitung dengan rumus:</p>
 <p>$$e_i = y_i - \hat{y}_i$$</p>
 <p>Dimana:</p>
 <ul>
@@ -11963,7 +11963,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [131]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">residuals</span> <span class="o">=</span> <span class="n">y_test</span> <span class="o">-</span> <span class="n">y_pred</span>
@@ -12020,7 +12020,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [132]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
@@ -12076,7 +12076,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Peningkatan-Model">Peningkatan Model<a class="anchor-link" href="#Peningkatan-Model">¶</a></h2><p>Dari evaluasi model baseline, diperoleh R² = 0.5615 yang menunjukkan model mampu menjelaskan 56% variasi data. Terdapat beberapa strategi untuk meningkatkan performa model:</p>
+<h2 id="8.-Peningkatan-Model"><strong>8. Peningkatan Model</strong><a class="anchor-link" href="#8.-Peningkatan-Model">¶</a></h2><p>Dari evaluasi model baseline, diperoleh R² = 0.5615 yang menunjukkan model mampu menjelaskan 56% variasi data. Terdapat beberapa strategi untuk meningkatkan performa model:</p>
 <ol>
 <li><strong>Feature Engineering</strong> - Menambah fitur baru berdasarkan insight dari EDA</li>
 <li><strong>Feature Scaling</strong> - Standardisasi fitur agar skala seragam</li>
@@ -12091,7 +12091,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Feature-Engineering-(Rekayasa-Fitur)">Feature Engineering (Rekayasa Fitur)<a class="anchor-link" href="#Feature-Engineering-(Rekayasa-Fitur)">¶</a></h3><p>Berdasarkan insight dari EDA, beberapa fitur baru dapat dibuat untuk meningkatkan performa model. Jam sibuk (rush hour) pada pukul 8 dan 18 menunjukkan penyewaan tinggi, sehingga perlu dibuat fitur khusus. Selain itu, transformasi siklikal pada variabel Hour diperlukan agar model memahami bahwa jam 23 dekat dengan jam 0.</p>
+<h3 id="8.1.-Feature-Engineering-(Rekayasa-Fitur)">8.1. Feature Engineering (Rekayasa Fitur)<a class="anchor-link" href="#8.1.-Feature-Engineering-(Rekayasa-Fitur)">¶</a></h3><p>Berdasarkan insight dari EDA, beberapa fitur baru dapat dibuat untuk meningkatkan performa model. Jam sibuk (rush hour) pada pukul 8 dan 18 menunjukkan penyewaan tinggi, sehingga perlu dibuat fitur khusus. Selain itu, transformasi siklikal pada variabel Hour diperlukan agar model memahami bahwa jam 23 dekat dengan jam 0.</p>
 </div>
 </div>
 </div>
@@ -12100,7 +12100,7 @@ Jumlah outlier: 158 (1.80%)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [133]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Feature Engineering pada data asli</span>
@@ -12153,7 +12153,7 @@ Jumlah outlier: 158 (1.80%)
 <pre>Fitur sebelum FE: 13 kolom
 Fitur sesudah FE: 18 kolom
 
-Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_humidity', 'hour_cos']
+Fitur baru yang ditambahkan: ['is_rush_hour', 'temp_humidity', 'hour_sin', 'hour_cos', 'time_of_day']
 </pre>
 </div>
 </div>
@@ -12164,7 +12164,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [134]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
@@ -12219,7 +12219,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Standarisasi-Fitur">Standarisasi Fitur<a class="anchor-link" href="#Standarisasi-Fitur">¶</a></h3><p>Setiap variabel dalam dataset memiliki skala berbeda (misalnya Temperature: -20 s.d. 40°C, Visibility: hingga 2000m). StandardScaler digunakan untuk mentransformasi semua variabel agar memiliki mean = 0 dan standar deviasi = 1, sehingga koefisien regresi dapat dibandingkan secara adil untuk menentukan fitur mana yang paling berpengaruh.</p>
+<h3 id="8.2.-Standarisasi-Fitur">8.2. Standarisasi Fitur<a class="anchor-link" href="#8.2.-Standarisasi-Fitur">¶</a></h3><p>Setiap variabel dalam dataset memiliki skala berbeda (misalnya Temperature: -20 s.d. 40°C, Visibility: hingga 2000m). StandardScaler digunakan untuk mentransformasi semua variabel agar memiliki mean = 0 dan standar deviasi = 1, sehingga koefisien regresi dapat dibandingkan secara adil untuk menentukan fitur mana yang paling berpengaruh.</p>
 </div>
 </div>
 </div>
@@ -12228,7 +12228,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [135]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
@@ -12262,9 +12262,9 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[135]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-04ed42fa-0efc-4c26-859f-a28f36befa52">
+<div class="colab-df-container" id="df-b3827722-8f9f-4c04-900a-cf810f6819d4">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -12383,7 +12383,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-04ed42fa-0efc-4c26-859f-a28f36befa52')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-b3827722-8f9f-4c04-900a-cf810f6819d4')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -12430,12 +12430,12 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-04ed42fa-0efc-4c26-859f-a28f36befa52 button.colab-df-convert');
+        document.querySelector('#df-b3827722-8f9f-4c04-900a-cf810f6819d4 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-04ed42fa-0efc-4c26-859f-a28f36befa52');
+        const element = document.querySelector('#df-b3827722-8f9f-4c04-900a-cf810f6819d4');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -12453,8 +12453,8 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
       }
     </script>
 </div>
-<div id="df-a47d70a1-6340-4d24-8b1c-cc1d2a8640f8">
-<button class="colab-df-quickchart" onclick="quickchart('df-a47d70a1-6340-4d24-8b1c-cc1d2a8640f8')" style="display:none;" title="Suggest charts">
+<div id="df-31a0f244-c34f-4d04-a0e4-3e2d6ff3f478">
+<button class="colab-df-quickchart" onclick="quickchart('df-31a0f244-c34f-4d04-a0e4-3e2d6ff3f478')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -12567,7 +12567,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-a47d70a1-6340-4d24-8b1c-cc1d2a8640f8 button');
+            document.querySelector('#df-31a0f244-c34f-4d04-a0e4-3e2d6ff3f478 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -12586,7 +12586,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Train-Improved-Model">Train Improved Model<a class="anchor-link" href="#Train-Improved-Model">¶</a></h3><p>Latih ulang model Linear Regression dengan fitur baru dan data yang sudah di-scale.</p>
+<h3 id="8.3.-Latih-Model-Improved">8.3. Latih Model Improved<a class="anchor-link" href="#8.3.-Latih-Model-Improved">¶</a></h3><p>Latih ulang model Linear Regression dengan fitur baru dan data yang sudah di-scale.</p>
 </div>
 </div>
 </div>
@@ -12595,7 +12595,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [136]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Train model improved</span>
@@ -12618,9 +12618,9 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[136]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-b3412aea-c436-499c-a361-3bd2445a027f">
+<div class="colab-df-container" id="df-1d471baa-d50e-4741-be48-d4a8cf79b8ec">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -12710,7 +12710,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-b3412aea-c436-499c-a361-3bd2445a027f')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-1d471baa-d50e-4741-be48-d4a8cf79b8ec')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -12757,12 +12757,12 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-b3412aea-c436-499c-a361-3bd2445a027f button.colab-df-convert');
+        document.querySelector('#df-1d471baa-d50e-4741-be48-d4a8cf79b8ec button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b3412aea-c436-499c-a361-3bd2445a027f');
+        const element = document.querySelector('#df-1d471baa-d50e-4741-be48-d4a8cf79b8ec');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -12780,8 +12780,8 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
       }
     </script>
 </div>
-<div id="df-16ef6ad1-81f2-4126-8d4c-8655dba1c195">
-<button class="colab-df-quickchart" onclick="quickchart('df-16ef6ad1-81f2-4126-8d4c-8655dba1c195')" style="display:none;" title="Suggest charts">
+<div id="df-48549a90-5697-4a0f-ad59-606a55a310c2">
+<button class="colab-df-quickchart" onclick="quickchart('df-48549a90-5697-4a0f-ad59-606a55a310c2')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -12894,7 +12894,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-16ef6ad1-81f2-4126-8d4c-8655dba1c195 button');
+            document.querySelector('#df-48549a90-5697-4a0f-ad59-606a55a310c2 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -12913,7 +12913,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Perbandingan-Performa">Perbandingan Performa<a class="anchor-link" href="#Perbandingan-Performa">¶</a></h3>
+<h3 id="8.4.-Perbandingan-Performa">8.4. Perbandingan Performa<a class="anchor-link" href="#8.4.-Perbandingan-Performa">¶</a></h3>
 </div>
 </div>
 </div>
@@ -12922,7 +12922,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [137]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">r2_improved</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_improved</span><span class="p">)</span>
@@ -12952,9 +12952,9 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[137]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-95ff568c-dbd6-42a1-a2a7-cbf114b12b54">
+<div class="colab-df-container" id="df-037e2321-29e1-422f-b840-621c316511c7">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -13026,7 +13026,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-95ff568c-dbd6-42a1-a2a7-cbf114b12b54')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-037e2321-29e1-422f-b840-621c316511c7')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -13073,12 +13073,12 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-95ff568c-dbd6-42a1-a2a7-cbf114b12b54 button.colab-df-convert');
+        document.querySelector('#df-037e2321-29e1-422f-b840-621c316511c7 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-95ff568c-dbd6-42a1-a2a7-cbf114b12b54');
+        const element = document.querySelector('#df-037e2321-29e1-422f-b840-621c316511c7');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -13096,8 +13096,8 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
       }
     </script>
 </div>
-<div id="df-d27b735b-902b-407e-8090-645460b873f3">
-<button class="colab-df-quickchart" onclick="quickchart('df-d27b735b-902b-407e-8090-645460b873f3')" style="display:none;" title="Suggest charts">
+<div id="df-0c818b29-2ef1-496b-9692-4074f12b4da3">
+<button class="colab-df-quickchart" onclick="quickchart('df-0c818b29-2ef1-496b-9692-4074f12b4da3')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -13210,13 +13210,13 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-d27b735b-902b-407e-8090-645460b873f3 button');
+            document.querySelector('#df-0c818b29-2ef1-496b-9692-4074f12b4da3 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
 </div>
-<div id="id_584840e5-5819-46f7-b88e-61ccded463eb">
+<div id="id_d4c49c22-d7eb-44a1-88ca-f5bba4591d56">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -13256,7 +13256,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_584840e5-5819-46f7-b88e-61ccded463eb button.colab-df-generate');
+        document.querySelector('#id_d4c49c22-d7eb-44a1-88ca-f5bba4591d56 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -13272,12 +13272,73 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="8.5.-Cross-Validation">8.5. Cross-Validation<a class="anchor-link" href="#8.5.-Cross-Validation">¶</a></h3><p>Mengingat evaluasi sebelumnya hanya menggunakan satu kali pembagian data (<em>single split</em> 80:20), terdapat risiko bahwa performa model bias terhadap data testing tertentu. Untuk menjawab hal ini, dilakukan <strong>5-Fold Cross-Validation</strong> pada <code>model_improved</code>. Teknik ini membagi data training menjadi 5 bagian berbeda dan melatih ulang model sebanyak 5 kali untuk melihat rata-rata kinerjanya. Hasil di bawah menunjukkan performa model yang lebih objektif dan stabil</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [138]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">cross_val_score</span><span class="p">,</span> <span class="n">KFold</span>
+
+<span class="c1"># Buat 5-Fold Cross-Validation</span>
+<span class="n">kf</span> <span class="o">=</span> <span class="n">KFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Hitung R2 score untuk setiap fold</span>
+<span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model_improved</span><span class="p">,</span> <span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">kf</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">'r2'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Cross-Validation R2 Scores: </span><span class="si">{</span><span class="n">cv_scores</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Rata-rata R2: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> (+/- </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Cross-Validation R2 Scores: [0.61513987 0.65155543 0.61604754 0.62926432 0.62289631]
+Rata-rata R2: 0.6270 (+/- 0.0133)
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Berdasarkan hasil 5-Fold Cross-Validation di atas, diperoleh rata-rata skor $R^2$ sebesar <strong>0.6270</strong> dengan standar deviasi yang sangat rendah yaitu <strong>0.0133</strong>.</p>
+<p>Standar deviasi yang kecil (&lt; 0.02) menunjukkan bahwa model memiliki performa yang konsisten dan <strong>tidak mengalami overfitting</strong> pada subset data tertentu. Model mampu melakukan generalisasi dengan baik pada berbagai variasi data uji.
+Dengan rata-rata skor cross-validation (0.6270) bahkan sedikit lebih tinggi dibandingkan skor <em>single split</em> awal (0.6189), yang mengonfirmasi bahwa metrik performa yang dilaporkan sebelumnya adalah estimasi yang valid dan objektif, bukan sekadar kebetulan akibat pembagian data (<em>random split</em>).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Visualisasi perbandingan</span>
@@ -13348,7 +13409,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Uji-Asumsi">Uji Asumsi<a class="anchor-link" href="#Uji-Asumsi">¶</a></h3><p>Linear Regression memiliki beberapa asumsi yang harus dipenuhi yaitu <em>linearity</em>, <em>normality of residuals</em>, <em>homoscedasticity</em>, dan <em>independence</em>. Pada tahap ini dilakukan uji normalitas residual menggunakan <strong>Shapiro-Wilk test</strong> untuk menguji apakah residual berdistribusi normal (H₀) atau tidak (H₁).</p>
+<h3 id="8.6.-Uji-Asumsi">8.6. Uji Asumsi<a class="anchor-link" href="#8.6.-Uji-Asumsi">¶</a></h3><p>Linear Regression memiliki beberapa asumsi yang harus dipenuhi yaitu <em>linearity</em>, <em>normality of residuals</em>, <em>homoscedasticity</em>, dan <em>independence</em>. Pada tahap ini dilakukan uji normalitas residual menggunakan <strong>Shapiro-Wilk test</strong> untuk menguji apakah residual berdistribusi normal (H₀) atau tidak (H₁).</p>
 </div>
 </div>
 </div>
@@ -13357,7 +13418,7 @@ Fitur baru yang ditambahkan: ['hour_sin', 'time_of_day', 'is_rush_hour', 'temp_h
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [139]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
@@ -13398,7 +13459,7 @@ Hasil: Tidak Normal
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [140]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
@@ -13456,7 +13517,7 @@ Hasil: Tidak Normal
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [141]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Linearity Check: Residuals vs Predictor</span>
@@ -13517,7 +13578,7 @@ Hasil: Tidak Normal
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Penanganan-Heteroskedastisitas">Penanganan Heteroskedastisitas<a class="anchor-link" href="#Penanganan-Heteroskedastisitas">¶</a></h2><p>Untuk mengatasi pola heteroskedastisitas yang terdeteksi, dilakukan transformasi logaritmik pada target variable menggunakan fungsi <code>log1p(y) = log(1 + y)</code>. Pendekatan ini dipilih karena distribusi Rented Bike Count yang right-skewed dengan banyak nilai rendah dan sedikit nilai tinggi. Transformasi logaritmik dapat menekan nilai ekstrem sehingga variance menjadi lebih homogen, dan umum digunakan untuk data count yang tidak memiliki nilai negatif.</p>
+<h2 id="9.-Penanganan-Heteroskedastisitas"><strong>9. Penanganan Heteroskedastisitas</strong><a class="anchor-link" href="#9.-Penanganan-Heteroskedastisitas">¶</a></h2><p>Untuk mengatasi pola heteroskedastisitas yang terdeteksi, dilakukan transformasi logaritmik pada target variable menggunakan fungsi <code>log1p(y) = log(1 + y)</code>. Pendekatan ini dipilih karena distribusi Rented Bike Count yang right-skewed dengan banyak nilai rendah dan sedikit nilai tinggi. Transformasi logaritmik dapat menekan nilai ekstrem sehingga variance menjadi lebih homogen, dan umum digunakan untuk data count yang tidak memiliki nilai negatif.</p>
 </div>
 </div>
 </div>
@@ -13528,7 +13589,7 @@ Hasil: Tidak Normal
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Transformasi-dan-Training">Transformasi dan Training<a class="anchor-link" href="#Transformasi-dan-Training">¶</a></h3>
+<h3 id="9.1.-Transformasi-dan-Training">9.1. Transformasi dan Training<a class="anchor-link" href="#9.1.-Transformasi-dan-Training">¶</a></h3>
 </div>
 </div>
 </div>
@@ -13537,7 +13598,7 @@ Hasil: Tidak Normal
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [142]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">y_train_log</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
@@ -13566,9 +13627,9 @@ Hasil: Tidak Normal
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[142]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-196cd17d-f663-41aa-b8bf-51b1792b58ae">
+<div class="colab-df-container" id="df-1311248d-a884-4a3b-861f-88cc623d9d8b">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -13658,7 +13719,7 @@ Hasil: Tidak Normal
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-196cd17d-f663-41aa-b8bf-51b1792b58ae')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-1311248d-a884-4a3b-861f-88cc623d9d8b')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -13705,12 +13766,12 @@ Hasil: Tidak Normal
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-196cd17d-f663-41aa-b8bf-51b1792b58ae button.colab-df-convert');
+        document.querySelector('#df-1311248d-a884-4a3b-861f-88cc623d9d8b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-196cd17d-f663-41aa-b8bf-51b1792b58ae');
+        const element = document.querySelector('#df-1311248d-a884-4a3b-861f-88cc623d9d8b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -13728,8 +13789,8 @@ Hasil: Tidak Normal
       }
     </script>
 </div>
-<div id="df-e830001e-3dd7-4ee3-a368-5f1a85fca0b7">
-<button class="colab-df-quickchart" onclick="quickchart('df-e830001e-3dd7-4ee3-a368-5f1a85fca0b7')" style="display:none;" title="Suggest charts">
+<div id="df-b38b81c2-4b3c-49cb-b92e-852bd823383f">
+<button class="colab-df-quickchart" onclick="quickchart('df-b38b81c2-4b3c-49cb-b92e-852bd823383f')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -13842,7 +13903,7 @@ Hasil: Tidak Normal
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-e830001e-3dd7-4ee3-a368-5f1a85fca0b7 button');
+            document.querySelector('#df-b38b81c2-4b3c-49cb-b92e-852bd823383f button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -13861,7 +13922,7 @@ Hasil: Tidak Normal
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Evaluasi-Residual-Setelah-Transform">Evaluasi Residual Setelah Transform<a class="anchor-link" href="#Evaluasi-Residual-Setelah-Transform">¶</a></h3>
+<h3 id="9.2.-Evaluasi-Residual-Setelah-Transform">9.2. Evaluasi Residual Setelah Transform<a class="anchor-link" href="#9.2.-Evaluasi-Residual-Setelah-Transform">¶</a></h3>
 </div>
 </div>
 </div>
@@ -13870,7 +13931,7 @@ Hasil: Tidak Normal
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [143]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Residual dalam skala log</span>
@@ -13919,7 +13980,7 @@ Hasil: Tidak Normal
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Uji-Normalitas-Residual-Setelah-Transform">Uji Normalitas Residual Setelah Transform<a class="anchor-link" href="#Uji-Normalitas-Residual-Setelah-Transform">¶</a></h3>
+<h3 id="9.3.-Uji-Normalitas-Residual-Setelah-Transform">9.3. Uji Normalitas Residual Setelah Transform<a class="anchor-link" href="#9.3.-Uji-Normalitas-Residual-Setelah-Transform">¶</a></h3>
 </div>
 </div>
 </div>
@@ -13928,7 +13989,7 @@ Hasil: Tidak Normal
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [144]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">sample_residuals_log</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">residuals_log</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">residuals_log</span><span class="p">)),</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -13966,7 +14027,7 @@ Hasil: Tidak Normal
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Perbandingan-Performa">Perbandingan Performa<a class="anchor-link" href="#Perbandingan-Performa">¶</a></h3>
+<h3 id="9.4.-Perbandingan-Performa">9.4. Perbandingan Performa<a class="anchor-link" href="#9.4.-Perbandingan-Performa">¶</a></h3>
 </div>
 </div>
 </div>
@@ -13975,7 +14036,7 @@ Hasil: Tidak Normal
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [145]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">r2_log</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_log_original</span><span class="p">)</span>
@@ -14003,9 +14064,9 @@ Hasil: Tidak Normal
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[145]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-04888b21-20c5-458a-b96b-ba6a4f28bf6b">
+<div class="colab-df-container" id="df-58acd11f-e827-4401-8b4d-c50c4c3abb69">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -14071,7 +14132,7 @@ Hasil: Tidak Normal
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-04888b21-20c5-458a-b96b-ba6a4f28bf6b')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-58acd11f-e827-4401-8b4d-c50c4c3abb69')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -14118,12 +14179,12 @@ Hasil: Tidak Normal
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-04888b21-20c5-458a-b96b-ba6a4f28bf6b button.colab-df-convert');
+        document.querySelector('#df-58acd11f-e827-4401-8b4d-c50c4c3abb69 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-04888b21-20c5-458a-b96b-ba6a4f28bf6b');
+        const element = document.querySelector('#df-58acd11f-e827-4401-8b4d-c50c4c3abb69');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -14141,8 +14202,8 @@ Hasil: Tidak Normal
       }
     </script>
 </div>
-<div id="df-7d844471-4a60-4dd0-ab7a-a60e6cdad990">
-<button class="colab-df-quickchart" onclick="quickchart('df-7d844471-4a60-4dd0-ab7a-a60e6cdad990')" style="display:none;" title="Suggest charts">
+<div id="df-7da7cb70-25e6-48a5-99ed-36d7a6261498">
+<button class="colab-df-quickchart" onclick="quickchart('df-7da7cb70-25e6-48a5-99ed-36d7a6261498')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -14255,13 +14316,13 @@ Hasil: Tidak Normal
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-7d844471-4a60-4dd0-ab7a-a60e6cdad990 button');
+            document.querySelector('#df-7da7cb70-25e6-48a5-99ed-36d7a6261498 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
 </div>
-<div id="id_9818dbd2-8f69-4816-9f09-b1a635004e92">
+<div id="id_0c557c20-e5ac-4b03-aa69-78a5484bc1a8">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -14301,7 +14362,7 @@ Hasil: Tidak Normal
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_9818dbd2-8f69-4816-9f09-b1a635004e92 button.colab-df-generate');
+        document.querySelector('#id_0c557c20-e5ac-4b03-aa69-78a5484bc1a8 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -14322,7 +14383,7 @@ Hasil: Tidak Normal
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [146]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Visualisasi perbandingan</span>
@@ -14403,7 +14464,7 @@ Hasil: Tidak Normal
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Interpretasi-Model">Interpretasi Model<a class="anchor-link" href="#Interpretasi-Model">¶</a></h2>
+<h2 id="10.-Interpretasi-Model"><strong>10. Interpretasi Model</strong><a class="anchor-link" href="#10.-Interpretasi-Model">¶</a></h2>
 </div>
 </div>
 </div>
@@ -14414,7 +14475,7 @@ Hasil: Tidak Normal
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Koefisien">Koefisien<a class="anchor-link" href="#Koefisien">¶</a></h3>
+<h3 id="10.1.-Koefisien">10.1. Koefisien<a class="anchor-link" href="#10.1.-Koefisien">¶</a></h3>
 </div>
 </div>
 </div>
@@ -14434,7 +14495,7 @@ Hasil: Tidak Normal
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [147]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">model_final</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
@@ -14469,9 +14530,9 @@ Koefisien Model (dengan fitur baru):
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[147]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-fa1926e0-0f62-428b-926a-87fe289efaeb">
+<div class="colab-df-container" id="df-b9f1a7dd-2764-4b06-bef1-78a20cd5003f">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -14590,7 +14651,7 @@ Koefisien Model (dengan fitur baru):
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-fa1926e0-0f62-428b-926a-87fe289efaeb')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-b9f1a7dd-2764-4b06-bef1-78a20cd5003f')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -14637,12 +14698,12 @@ Koefisien Model (dengan fitur baru):
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-fa1926e0-0f62-428b-926a-87fe289efaeb button.colab-df-convert');
+        document.querySelector('#df-b9f1a7dd-2764-4b06-bef1-78a20cd5003f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-fa1926e0-0f62-428b-926a-87fe289efaeb');
+        const element = document.querySelector('#df-b9f1a7dd-2764-4b06-bef1-78a20cd5003f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -14660,8 +14721,8 @@ Koefisien Model (dengan fitur baru):
       }
     </script>
 </div>
-<div id="df-003c288a-da48-45ff-b717-fde6c22e52a3">
-<button class="colab-df-quickchart" onclick="quickchart('df-003c288a-da48-45ff-b717-fde6c22e52a3')" style="display:none;" title="Suggest charts">
+<div id="df-43765be5-d848-471e-bc91-55b6e01ef5da">
+<button class="colab-df-quickchart" onclick="quickchart('df-43765be5-d848-471e-bc91-55b6e01ef5da')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -14774,13 +14835,13 @@ Koefisien Model (dengan fitur baru):
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-003c288a-da48-45ff-b717-fde6c22e52a3 button');
+            document.querySelector('#df-43765be5-d848-471e-bc91-55b6e01ef5da button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
 </div>
-<div id="id_0fdc1b6a-664e-4075-bda6-48fbef979a8c">
+<div id="id_b817d19c-5824-492c-8c05-d4b9231c4a97">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -14820,7 +14881,7 @@ Koefisien Model (dengan fitur baru):
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_0fdc1b6a-664e-4075-bda6-48fbef979a8c button.colab-df-generate');
+        document.querySelector('#id_b817d19c-5824-492c-8c05-d4b9231c4a97 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -14843,7 +14904,7 @@ Koefisien Model (dengan fitur baru):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Feature-Importance-Plot">Feature Importance Plot<a class="anchor-link" href="#Feature-Importance-Plot">¶</a></h3>
+<h3 id="10.2.-Feature-Importance-Plot">10.2. Feature Importance Plot<a class="anchor-link" href="#10.2.-Feature-Importance-Plot">¶</a></h3>
 </div>
 </div>
 </div>
@@ -14852,7 +14913,7 @@ Koefisien Model (dengan fitur baru):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [148]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">coef_sorted</span> <span class="o">=</span> <span class="n">coef_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'coefficient'</span><span class="p">)</span>
@@ -14902,7 +14963,7 @@ Koefisien Model (dengan fitur baru):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Uji-Signifikansi-Variabel-(P-Value)">Uji Signifikansi Variabel (P-Value)<a class="anchor-link" href="#Uji-Signifikansi-Variabel-(P-Value)">¶</a></h3><p>Untuk memastikan variabel yang digunakan benar-benar berpengaruh signifikan, dilakukan uji statistik menggunakan Ordinary Least Squares (OLS) dari statsmodels.</p>
+<h3 id="10.3.-Uji-Signifikansi-Variabel-(P-Value)">10.3. Uji Signifikansi Variabel (P-Value)<a class="anchor-link" href="#10.3.-Uji-Signifikansi-Variabel-(P-Value)">¶</a></h3><p>Untuk memastikan variabel yang digunakan benar-benar berpengaruh signifikan, dilakukan uji statistik menggunakan Ordinary Least Squares (OLS) dari statsmodels.</p>
 <p>Uji ini menguji hipotesis <strong>H₀: βᵢ = 0</strong> (variabel tidak berpengaruh) vs <strong>H₁: βᵢ ≠ 0</strong> (variabel berpengaruh). Variabel dengan p-value &gt; 0.05 menunjukkan bahwa koefisiennya tidak signifikan berbeda dari nol pada tingkat kepercayaan 95%, sehingga dianggap tidak memberikan kontribusi signifikan terhadap prediksi Rented Bike Count dan akan dikeluarkan dari persamaan regresi final.</p>
 </div>
 </div>
@@ -14912,7 +14973,7 @@ Koefisien Model (dengan fitur baru):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [149]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sm</span>
@@ -14943,7 +15004,7 @@ Dep. Variable:      Rented Bike Count   R-squared:                       0.629
 Model:                            OLS   Adj. R-squared:                  0.628
 Method:                 Least Squares   F-statistic:                     659.3
 Date:                Mon, 01 Dec 2025   Prob (F-statistic):               0.00
-Time:                        00:01:14   Log-Likelihood:                -51801.
+Time:                        04:48:39   Log-Likelihood:                -51801.
 No. Observations:                7008   AIC:                         1.036e+05
 Df Residuals:                    6989   BIC:                         1.038e+05
 Df Model:                          18                                         
@@ -14991,7 +15052,7 @@ strong multicollinearity or other numerical problems.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [150]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Ambil p-values</span>
@@ -15039,7 +15100,7 @@ strong multicollinearity or other numerical problems.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Persamaan-Regresi">Persamaan Regresi<a class="anchor-link" href="#Persamaan-Regresi">¶</a></h3>
+<h3 id="10.4.-Persamaan-Regresi">10.4. Persamaan Regresi<a class="anchor-link" href="#10.4.-Persamaan-Regresi">¶</a></h3>
 </div>
 </div>
 </div>
@@ -15048,7 +15109,7 @@ strong multicollinearity or other numerical problems.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [151]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">intercept</span> <span class="o">=</span> <span class="n">model_final</span><span class="o">.</span><span class="n">intercept_</span>
@@ -15090,7 +15151,7 @@ Rented Bike Count = -419.69 + 15.44*Hour + 35.59*Temperature - 3.07*Humidity + 0
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="Persamaan-Multiple-Linear-Regression">Persamaan Multiple Linear Regression<a class="anchor-link" href="#Persamaan-Multiple-Linear-Regression">¶</a></h2><p>Secara umum, persamaan Multiple Linear Regression dinyatakan sebagai:</p>
+<h2 id="11.-Persamaan-Multiple-Linear-Regression"><strong>11. Persamaan Multiple Linear Regression</strong><a class="anchor-link" href="#11.-Persamaan-Multiple-Linear-Regression">¶</a></h2><p>Secara umum, persamaan Multiple Linear Regression dinyatakan sebagai:</p>
 <p>$$\hat{Y} = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n$$</p>
 <p>Dimana:</p>
 <ul>
@@ -15164,6 +15225,20 @@ $$</p>
 <li><strong>Rainfall</strong> (-57): Hujan menurunkan minat bersepeda</li>
 </ol>
 <h3 id="Limitasi">Limitasi<a class="anchor-link" href="#Limitasi">¶</a></h3><p>Hasil uji asumsi menunjukkan bahwa residual tidak sepenuhnya berdistribusi normal dan terdapat heteroskedastisitas. Upaya penanganan melalui transformasi logaritmik telah dilakukan namun tidak memberikan perbaikan yang konsisten di semua metrik. Hal ini menandakan bahwa model non-linear seperti Random Forest atau Gradient Boosting mungkin lebih sesuai untuk data ini.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span> 
+</pre></div>
+</div>
 </div>
 </div>
 </div>
