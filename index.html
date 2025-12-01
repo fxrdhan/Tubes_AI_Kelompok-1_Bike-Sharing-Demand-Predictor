@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Seoul_Bike_Regression (10)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Seoul_Bike_Regression (11)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7524,11 +7524,7 @@ a.anchor-link {
 <li>Muhammad Fakhri Arrasyid - 101032300150</li>
 <li>Yoga Reswara - 101032300119</li>
 </ul>
-<p>Dataset: <a href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand">Seoul Bike Sharing Demand</a></p>
-<p>Sistem bike sharing menjadi solusi transportasi urban yang semakin populer.
-Kemampuan memprediksi demand secara akurat membantu operator mengoptimalkan
-distribusi sepeda dan mengurangi shortage. Proyek ini membangun model prediksi
-menggunakan data cuaca dan waktu dari sistem bike sharing.</p>
+<p>Dataset: <a href="https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand">Seoul Bike Sharing Demand (UCI ML Repository)</a></p>
 </div>
 </div>
 </div>
@@ -8947,7 +8943,8 @@ memory usage: 958.3+ KB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h2 id="4.-Analisis-Data-Eksploratif-(EDA)"><strong>4. Analisis Data Eksploratif (EDA)</strong><a class="anchor-link" href="#4.-Analisis-Data-Eksploratif-(EDA)">¶</a></h2>
+<h2 id="4.-Analisis-Data-Eksploratif-(EDA)"><strong>4. Analisis Data Eksploratif (EDA)</strong><a class="anchor-link" href="#4.-Analisis-Data-Eksploratif-(EDA)">¶</a></h2><p>Sebelum melakukan pemodelan, perlu dilakukan eksplorasi data untuk memahami karakteristik dan pola yang terkandung di dalamnya. Analisis data eksploratif bertujuan untuk mengidentifikasi distribusi variabel target, mendeteksi keberadaan outlier, menganalisis korelasi antar variabel, serta menemukan insight yang dapat mengarahkan proses feature engineering dan pemilihan model.
+Tahapan EDA dalam proyek ini meliputi: (1) analisis distribusi variabel target (Rented Bike Count), (2) deteksi dan penanganan outlier, (3) analisis korelasi antar fitur numerik, dan (4) eksplorasi pola penyewaan berdasarkan variabel temporal dan kategorikal.</p>
 </div>
 </div>
 </div>
@@ -8992,7 +8989,23 @@ memory usage: 958.3+ KB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="4.1.-Outliers-pada-Rented-Bike-Count">4.1. Outliers pada Rented Bike Count<a class="anchor-link" href="#4.1.-Outliers-pada-Rented-Bike-Count">¶</a></h3>
+<h2 id="4.1.-Deteksi-Outlier">4.1. Deteksi Outlier<a class="anchor-link" href="#4.1.-Deteksi-Outlier">¶</a></h2><p>Deteksi outlier dilakukan menggunakan metode Interquartile Range (IQR). Metode ini mengidentifikasi nilai-nilai ekstrem berdasarkan sebaran data pada kuartil. Faktor pengali 1.5 merupakan konvensi standar yang diperkenalkan oleh John Tukey (1977) dalam metode boxplot.</p>
+<h3 id="Formulasi-Matematis">Formulasi Matematis<a class="anchor-link" href="#Formulasi-Matematis">¶</a></h3><p>Diberikan dataset $X = \{x_1, x_2, ..., x_n\}$, maka:</p>
+<p><strong>Kuartil Pertama (Q1):</strong>
+$$Q_1 = P_{25}(X)$$</p>
+<p><strong>Kuartil Ketiga (Q3):</strong>
+$$Q_3 = P_{75}(X)$$</p>
+<p><strong>Interquartile Range:</strong>
+$$IQR = Q_3 - Q_1$$</p>
+<p><strong>Batas Bawah (Lower Bound):</strong>
+$$L_b = Q_1 - 1.5 \times IQR$$</p>
+<p><strong>Batas Atas (Upper Bound):</strong>
+$$U_b = Q_3 + 1.5 \times IQR$$</p>
+<p><strong>Kriteria Outlier:</strong></p>
+<p>Suatu observasi $x_i$ dikategorikan sebagai outlier jika dan hanya jika:</p>
+<p>$$x_i &lt; L_b \quad \lor \quad x_i &gt; U_b$$</p>
+<p>atau dalam notasi himpunan:</p>
+<p>$$\text{Outliers} = \{x_i \in X \mid x_i &lt; (Q_1 - 1.5 \cdot IQR) \lor x_i &gt; (Q_3 + 1.5 \cdot IQR)\}$$</p>
 </div>
 </div>
 </div>
@@ -9063,8 +9076,8 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Menggunakan metode IQR, batas atas outlier ditemukan pada nilai ~2376. Data di atas batas ini secara statistik dapat dikategorikan sebagai outlier dengan jumlah 158 data (1.80% dari total).</p>
-<p>Meskipun demikian, outlier pada <code>Rented Bike Count</code> tidak akan dihapus. Nilai-nilai ekstrem ini bukan merupakan noise atau error pengukuran, melainkan representasi demand aktual yang terjadi pada kondisi tertentu seperti jam sibuk (rush hour), cuaca optimal, dan hari operasional. Kemampuan model untuk memprediksi peak demand justru berguna bagi operator dalam merencanakan distribusi sepeda.</p>
+<p>Berdasarkan perhitungan di atas, batas atas outlier ditemukan pada nilai 2376.625. Data dengan jumlah penyewaan di atas batas tersebut secara statistik dikategorikan sebagai outlier, dengan total 158 observasi atau 1.80% dari keseluruhan data.</p>
+<p>Outlier pada variabel Rented Bike Count tidak akan dihapus dari dataset. Keputusan ini didasarkan pada pertimbangan bahwa nilai-nilai ekstrem tersebut bukan merupakan noise atau error pengukuran, melainkan representasi demand aktual yang terjadi pada kondisi tertentu seperti jam sibuk, cuaca optimal, dan hari operasional. Kemampuan model untuk memprediksi peak demand justru menjadi informasi yang berguna bagi operator dalam merencanakan distribusi dan alokasi sepeda.</p>
 </div>
 </div>
 </div>
@@ -9075,7 +9088,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="4.2.-Korelasi-Semua-Fitur">4.2. Korelasi Semua Fitur<a class="anchor-link" href="#4.2.-Korelasi-Semua-Fitur">¶</a></h3>
+<h3 id="4.2.-Korelasi-Semua-Fitur">4.2. Korelasi Semua Fitur<a class="anchor-link" href="#4.2.-Korelasi-Semua-Fitur">¶</a></h3><p>Analisis korelasi dilakukan untuk mengidentifikasi hubungan linear antar variabel numerik. Matriks korelasi divisualisasikan menggunakan heatmap untuk memudahkan identifikasi pasangan variabel dengan korelasi tinggi yang berpotensi menyebabkan multikolinearitas.</p>
 </div>
 </div>
 </div>
@@ -9133,7 +9146,7 @@ Jumlah outlier: 158 (1.80%)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="4.3.-Korelasi-Fitur-dengan-Target">4.3. Korelasi Fitur dengan Target<a class="anchor-link" href="#4.3.-Korelasi-Fitur-dengan-Target">¶</a></h3>
+<h3 id="4.3.-Korelasi-Fitur-dengan-Target">4.3. Korelasi Fitur dengan Target<a class="anchor-link" href="#4.3.-Korelasi-Fitur-dengan-Target">¶</a></h3><p>Untuk menentukan fitur mana yang paling relevan sebagai prediktor, dilakukan analisis korelasi antara setiap fitur dengan variabel target (Rented Bike Count). Fitur dengan korelasi tinggi terhadap target berpotensi menjadi prediktor yang kuat dalam model regresi.</p>
 </div>
 </div>
 </div>
